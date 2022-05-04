@@ -34,8 +34,7 @@ for i in range(books_count):
     for user in users_list:
         if books_list:
             user['books'].append(books_list.pop())
-        else:
-            break
+
 
 with open("../src/reference.json", "w") as file:
     result = json.dumps(data, indent=4)
